@@ -1,14 +1,17 @@
 .contenedor-imagen {
     text-align: center;
   }
-
+.acenter{
+  text-align: center
+}
   .imagen {
-    width: 370px;
+    width: 400px;
     height: auto; 
   }
 .fondo-pantalla{
-    background-color:#FFF8E8;  
+    background-color:#ECDFCC;  
 }
+
 .arial{
     font-family: Arial;
 }
@@ -19,13 +22,13 @@
 .box {
   background-color: #028391;
   display: inline-block;
-  padding: 20px;
+  padding: 10px;
   border: 5px solid black;
   text-align: center; /* Centra la imagen horizontalmente */
 }
 
 .logo {
-  width: 80%; /* Ajusta este valor para cambiar el ancho */
+  width: 50%; /* Ajusta este valor para cambiar el ancho */
   height: auto; /* Mantiene la proporción de la imagen */
 }
 .alineacion-centrada{
@@ -38,7 +41,81 @@
   background-color: white;
   box-sizing: border-box;
   padding: 1px 1px; /* Reduce el padding para hacer el cuadro más pequeño */
-  width: 60%; /* Permite que el ancho se ajuste al contenido */
+  width: 90%; /* Permite que el ancho se ajuste al contenido */
   height: auto; /* Permite que la altura se ajuste al contenido */
   margin: 0 auto;
+}
+
+
+.navbar-container {
+  text-align: center;
+}
+
+nav {
+  background-color: transparent;
+  overflow: hidden;
+}
+
+nav a {
+  display: inline-block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #E8B86D;
+  color: black;
+}
+
+.color-invertido {
+  background-color: black; /* Color de fondo al pasar el mouse */
+  color: #E8B86D; /* Color del texto al pasar el mouse */
+}
+
+.containerbody {
+  display: flex;
+}
+
+.contenedor-video {
+  display: grid;
+  place-items: center;
+}
+
+.texto {
+  padding-left: 20px; /* Ajusta el valor según tu preferencia */
+  font-family: Arial;
+}
+
+.contenedord {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px; /* Espacio entre los divs */
+}
+
+.div-hijo {
+  height: 100px;
+  font-family: Arial;
+}
+.boton-redondo {
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 10px;
+  background-color: #6A9C89;
+  color: #000; /* Color de la letra a negro */
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border: 2px solid #000;
+}
+
+.boton-redondo:hover {
+  background-color: #fff;
+  color: #6A9C89;
+}
+
+.contenedorinfo {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0px; /* Espacio entre los divs */
 }
