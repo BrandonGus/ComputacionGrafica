@@ -1,0 +1,183 @@
+/* Reseteo de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estructura general */
+body {
+    font-family: Arial, sans-serif;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: aliceblue; /* Añade la ruta correcta aquí */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Menú de navegación */
+nav {
+    background-color: #605678; /* Color de fondo del menú */
+    padding: 15px; /* Aumenté el padding para hacer el menú más alto */
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #FFE6A5; /* Color del texto en el menú */
+    font-size: 18px;
+    font-weight: bold; /* Añade grosor al texto */
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #FFBF61; /* Color al hacer hover */
+    text-decoration: underline;
+}
+
+/* Encabezado (Home) */
+header {
+    text-align: center;
+    padding: 20px;
+    background-image: url('img/fondohome.webp'); /* Añade la ruta correcta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 570px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    animation: fadeIn 2s ease-in;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/* Sección Sobre mí */
+#info-personal {
+    padding: 40px 0;
+    text-align: center;
+    background-color: rgba(255, 230, 165, 0.9); /* Cambié el fondo a un tono de la nueva paleta */
+    border-bottom: 2px solid #FFBF61;
+    animation: slideIn 1.5s ease-out;
+}
+
+#info-personal p {
+    text-align: justify;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* Proyectos Web */
+#proyectos {
+    padding: 60px 0;
+    background-color: rgba(138, 191, 163, 0.9); /* Fondo cambiado a otro color de la paleta */
+    text-align: center;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.project {
+    background-color: #FFE6A5; /* Color del contenedor */
+    border: 1px solid #605678; /* Color de borde del contenedor */
+    padding: 20px;
+    transition: transform 0.3s;
+    margin-top: 30px;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.project h3 {
+    margin-top: 20px;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project a {
+    color: #605678; /* Color de los enlaces */
+    text-decoration: none;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+/* Sección Contacto */
+#contacto {
+    background-color: #605678; /* Cambié el color de fondo */
+    color: #FFE6A5;
+    padding: 20px;
+    text-align: center;
+}
+
+#contacto ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#contacto ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+#contacto ul li a {
+    color: #000000;
+    background-color: #FFBF61;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+#contacto ul li a:hover {
+    background-color: #FFE6A5;
+}
+
+/* Efectos de animación */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(50px); }
+    to { transform: translateY(0); }
+}
+
+/* Diseño adaptable */
+@media (max-width: 768px) {
+    .project-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border: 3px solid black; /* Añade un borde negro de 3px */
+}
