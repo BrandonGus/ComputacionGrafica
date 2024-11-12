@@ -1,17 +1,21 @@
-const carouselImages = document.querySelector('.carousel-images');
 const images = document.querySelectorAll('.carousel img');
 let index = 0;
 
-function showImageAtIndex() {
-    carouselImages.style.transform = `translateX(-${index * 100}%)`;
+function updateActiveImage() {
+    images.forEach((img, i) => {
+        img.classList.toggle('active', i === index);
+    });
 }
 
 function showNextImage() {
-    index = (index + 1) % images.length; // Va al principio después de la última imagen
-    showImageAtIndex();
+    index = (index + 1) % images.length; // Avanza al siguiente índice y vuelve al inicio si está al final
+    updateActiveImage();
 }
 
 function showPreviousImage() {
-    index = (index - 1 + images.length) % images.length; // Va al final después de la primera imagen
-    showImageAtIndex();
+    index = (index - 1 + images.length) % images.length; // Retrocede y vuelve al final si está al principio
+    updateActiveImage();
 }
+
+// Inicializa mostrando la primera imagen
+updateActiveImage();
