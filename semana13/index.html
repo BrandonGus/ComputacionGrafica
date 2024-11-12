@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml/DTD/xhtml-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Horus - Proyecto de E-commerce de Autopartes</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="navbar">
+            <div class="logo">
+                <img src="img/horuz.png" alt="Logo de Horus" />
+                <span class="logo-text">Proyecto Horus</span>
+            </div>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="detalles.html">Detalles Técnicos</a>
+                <a href="avances.html">Avances</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container main-content">
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="img/image1.png" alt="Imagen 1" />
+                <img src="img/image2.png" alt="Imagen 2" />
+                <img src="img/image3.png" alt="Imagen 3" />
+                <img src="img/image4.png" alt="Imagen 4" />
+                <img src="img/image5.png" alt="Imagen 5" />
+            </div>
+            <button class="carousel-button prev" onclick="showPreviousImage()">&#10094;</button>
+            <button class="carousel-button next" onclick="showNextImage()">&#10095;</button>
+        </div>
+        
+        <div class="description">
+            <h2>Bienvenido a Horus</h2>
+            <p>Horus es una plataforma de e-commerce diseñada para facilitar la compra y venta de autopartes entre usuarios de yonkes y compradores independientes.</p>
+            <ul>
+                <li>Autenticación con Google</li>
+                <li>Filtrado de categorías</li>
+                <li>Integración con OpenStreetMap</li>
+                <li>Pagos a través de PayPal/Stripe</li>
+            </ul>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Proyecto Horus</h3>
+                <p>Plataforma de e-commerce para la compra y venta de autopartes.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="detalles.html">Detalles Técnicos</a></li>
+                    <li><a href="avances.html">Avances</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social-icons">
+                <h3>Síguenos</h3>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Horus Project</p>
+        </div>
+    </footer>
+
+    <script src="js/carousel.js"></script>
+</body>
+</html>
